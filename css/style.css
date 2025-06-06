@@ -1,340 +1,228 @@
 :root{
-  --font-family:"Inter" sans-serif ;
-  flex-direction: column;
-}
-.container {
-  max-width: 376px;
-  margin: 0 auto;
-right: 200px;
-
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-
+--footer-color-header-color: rgba(47, 48,58,);
+--background-color: rgba(245,244,250);
+--background-color-section2: rgba(255, 255, 255);
+--webstudio-web-color: rgba(33,150,243);
+--comentary-color: rgba(75,75,75);
+--h6--color: rgba(21,21,21);
+font-family: "Roboto";  
+font-family: "Railway";
 }
 
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
 
+  background-color: #f8f9fa;
+}
 
 .header {
+  background-color: #fff;
+padding: 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding:  20px;
-  padding-left: 120px;
-  background-image: url('../img/background-header.jpg');
-  opacity:0,1;
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
-    border-bottom: 3px solid white;
-}
-.header ::before{
  
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
-.navigation-container {
+nav {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 
-.navigaion-img {
-  width: 120px; 
-  height: auto; 
-
+.link-logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
 }
 
+.logo-span {
+  color: #007bff;
+}
 
-.navigation-list {
+.header-list {
   list-style: none;
   display: flex;
   gap: 20px;
+  align-items: center; 
 }
 
-.navigation-item {
-  display: inline-block;
+.header-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
 
 }
-.header-right {
+
+.header-list a:hover {
+  color: #007bff;
+}
+.header-info-list {
   display: flex;
-  align-items: center;
   gap: 20px; 
-}
-
-.navigation-link {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  transition: color 0.3s;
-  font-family: "Inter", sans-serif;
-}
-
-
-.navigation-link:hover {
-  color: #1db4e0;
-}
-
-.a-nav-login {
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
-  padding: 12px 24px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #0B0E66;
-  text-decoration: none;
-  border-radius: 15px 0 15px 0;
-  border: 2px solid #00bfff;
-  color: #26C7EA;
-  font-family: "Inter", sans-serif;
-
-}
-
-.a-nav-login:hover {
-  background-color: darkblue;
-}
-
-.header-list-lang {
-  display: flex;
-  gap: 10px;
+  align-items: center; 
   list-style: none;
-  font-family: "Inter", sans-serif;
 }
 
-
-.header-item-lang {
-  cursor: pointer;
-  font-weight: bold;
-  color: white;
+.header-info-item {
+  font-size: 16px;
 }
 
-.header-item-lang:hover {
-  text-decoration: underline;
-}
-
-.hero {
-  background-image: url('../img/background-avatar.png'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  
-  height: 100vh;
-  padding: 40px 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column; 
-
-  right: 20px; 
-  bottom: 20px;
- 
-
-}
-.content-right {
-  display: flex;
-  flex-direction: column; 
-  align-items: flex-end; 
-  text-align: right; 
-}
-
-
-
-
-.paragraph-hero {
-  font-size: 1.4em;
-  margin-bottom: 20px;
-  text-align: left;
-  justify-content: left;
-  font-family: "Inter", sans-serif;
-}
-
-.link-item {
-  padding: 12px 24px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #0B0E66;
+.header-info-link {
   text-decoration: none;
-  border-radius: 15px 0 15px 0;
-  border: 2px solid #00bfff;
-  color: #26C7EA;
-  font-family: "Inter", sans-serif;
+  color: #333;
+
 }
 
-.link-item:hover {
-  background-color: darkblue; 
-  font-family: "Inter", sans-serif;
-}
-.social-icons {
-  display: flex;
-  flex-direction: column; 
-  position: absolute;
-  right: 50px; 
-  bottom: 20px;
-
-  
-  
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
-  margin: 5px 0; 
+.header-info-link:hover {
+  color: #007bff;
 }
 
 
-.mini {
+.main {
   text-align: center;
-  padding: 30px;
-  background-color: white;
 }
 
-.section-mini-p {
-  font-size: 25px;
-  font-weight: 600;
-  color: #ffffff;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.5;
-  color: #0A3853;
-  font-family: "Inter", sans-serif;
-}
-.mini-name{
-  color: #0A3853;
-  font-family: "Inter", sans-serif;
-  
-}
-.section-2{
-  background-image: url('../img/background1.png');
+.Hero {
+  background-color: #2F303A;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 1440px;
-  height: 741px;
-  display: flex;
- justify-content: center;
- align-items: center;
-}
-
-
-.a-button {
-  padding: 12px 24px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #0B0E66;
-  text-decoration: none;
-  border-radius: 15px 0 15px 0;
-  border: 2px solid #00bfff;
-  color: #26C7EA;
-  font-family: "Inter", sans-serif;
-}
-.section-3 {
-  background: url('../img/background2.png') ;
-  padding: 50px;
-  text-align: center;
-  color: white;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.section-3-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 10px;
-  flex-wrap: wrap;
-}
-
-.section-3-article {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: black;
-  font-family: "Inter", sans-serif;
-}
-
-.list-section-3 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+padding: 250px;
+  color: #fff;
   justify-content: center;
-  font-family: "Inter", sans-serif;
- 
 }
 
-.list-section-3-item {
-  font-size: 18px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 200px;
-  height: 200px;
+.hero-item {
+  font-size: 36px;
+  font-weight: bold;
   text-align: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  color: #141414;
-  font-family: "Inter", sans-serif;
+}
+.button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #007bff; 
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
 }
 
-.icon-arrow {
- 
-  margin: 0 10px;
+.button:hover {
+  background-color: #0056b3; 
+}
+
+
+.details-section {
+  margin-top: 40px;
+}
+
+.details {
+  font-size: 28px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.details-list {
+  display: flex;
+  justify-content: center; 
+  gap: 40px; 
+  
+  list-style: none;
+}
+
+.details-item {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.details-content {
+  font-size: 16px;
+  color: #666;
+}
+
+.section-about {
+  padding: 40px 0;
+}
+
+.section-item {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.section-about-list {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  list-style: none;
+}
+
+.images-about {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.section-team {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+}
+
+.section-team-item-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  list-style: none;
+}
+
+.team-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  width: 200px;
+  text-align: center;
+}
+
+.team-images {
+  width: 150px;
+
+  object-fit: cover;
 }
 
 
 
 
 .footer {
-  
-  background-image: url('../img/footer.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #343a40;
+ 
   padding: 20px;
   text-align: center;
-  color: white;
-  font-family: "Inter", sans-serif;
 }
 
 .footer-link {
-  display: block;
-  font-size: 16px;
-  color: white;
+  font-size: 22px;
+  font-weight: bold;
   text-decoration: none;
-  margin-bottom: 10px;
-  font-family: "Inter", sans-serif;
+  color: #fff;
 }
 
-.footer-link:hover {
-  text-decoration: underline;
-  font-family: "Inter", sans-serif;
-}
-
-.footer-copyright {
-  font-size: 15px;
-  color: #bbbbbb;
+.footer-list {
+  list-style: none;
   margin-top: 15px;
-  font-family: "Inter", sans-serif;
-  
 }
 
+.footer-item {
+  font-size: 16px;
+}
 
-
-
-
-
+.footer-item a {
+  text-decoration: none;
+  color: #bbb;
+}
